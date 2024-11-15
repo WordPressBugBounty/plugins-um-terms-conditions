@@ -4,11 +4,11 @@ Plugin URI: https://ultimatemember.com/extensions/terms-conditions/
 Contributors: ultimatemember, champsupertramp, nsinelnikov
 Tags: community, member, membership, user-profile
 Requires at least: 5.5
-Tested up to: 6.5
-Stable tag: 2.1.8
+Tested up to: 6.7
+Stable tag: 2.1.9
 License: GNU Version 2 or Any Later Version
 License URI: http://www.gnu.org/licenses/gpl-3.0.txt
-Requires UM core at least: 2.7.0
+Requires UM core at least: 2.9.0
 
 Add a terms and condition checkbox to your registration forms & require users to agree to your T&Cs before registering on your site.
 
@@ -49,6 +49,11 @@ Got a problem or need help with Ultimate Member? Head over to our [documentation
 == Changelog ==
 
 = Important: Please update to Ultimate Member 2.1 before updating the extension =
+
+= 2.1.9: November 15, 2024 =
+
+* Added: Compatibility with Ultimate Member 2.9.0 and Action Scheduler for email sending
+* Fixed: "Load textdomain just in time" issue
 
 = 2.1.8: April 29, 2024 =
 

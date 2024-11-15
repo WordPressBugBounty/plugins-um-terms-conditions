@@ -3,7 +3,7 @@
  * Plugin Name: Ultimate Member - Terms & Conditions
  * Plugin URI: https://ultimatemember.com/extensions/terms-conditions/
  * Description: Add a terms and condition checkbox to your registration forms & require users to agree to your T&Cs before registering on your site.
- * Version: 2.1.8
+ * Version: 2.1.9
  * Author: Ultimate Member
  * Author URI: https://ultimatemember.com/
  * Text Domain: um-terms-conditions
@@ -11,7 +11,7 @@
  * Requires at least: 5.5
  * Requires PHP: 5.6
  * Requires Plugins: ultimate-member
- * UM version: 2.7.0
+ * UM version: 2.9.0
  *
  * @package UM_TermsConditions
  */
@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 require_once ABSPATH . 'wp-admin/includes/plugin.php';
 
-$plugin_data = get_plugin_data( __FILE__ );
+$plugin_data = get_plugin_data( __FILE__, true, false );
 
 define( 'um_terms_conditions_url', plugin_dir_url( __FILE__  ) );
 define( 'um_terms_conditions_path', plugin_dir_path( __FILE__ ) );
@@ -30,7 +30,7 @@ define( 'um_terms_conditions_extension', $plugin_data['Name'] );
 define( 'um_terms_conditions_version', $plugin_data['Version'] );
 define( 'um_terms_conditions_textdomain', 'um-terms-conditions' );
 
-define( 'um_terms_conditions_requires', '2.7.0' );
+define( 'um_terms_conditions_requires', '2.9.0' );
 
 function um_terms_conditions_plugins_loaded() {
 	$locale = ( '' !== get_locale() ) ? get_locale() : 'en_US';

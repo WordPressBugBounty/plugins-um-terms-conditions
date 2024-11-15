@@ -102,7 +102,13 @@ class Email {
 		);
 
 		foreach ( $emails as $email_address ) {
-			UM()->mail()->send( $email_address, 'terms_conditions_agreement', $args );
+			$mail_args = array(
+				$email_address,
+				'terms_conditions_agreement',
+				$args,
+			);
+
+			UM()->maybe_action_scheduler()->enqueue_async_action( 'um_dispatch_email', $mail_args );
 		}
 	}
 }
