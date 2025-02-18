@@ -3,7 +3,7 @@
  * Template for the UM Terms and Conditions.
  *
  * Caller: method display_option()
- * @version 2.1.4
+ * @version 2.2.0
  *
  * This template can be overridden by copying it to yourtheme/ultimate-member/um-terms-conditions/um-terms-conditions-public-display.php
  *
@@ -11,7 +11,12 @@
  */
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
-} ?>
+}
+
+// The "Terms & Conditions" field content can not contain forms.
+$allowed_html = UM()->get_allowed_html( 'templates' );
+unset( $allowed_html['form'] );
+?>
 
 <div class="um-field um-field-type_terms_conditions"  data-key="use_terms_conditions_agreement" style="display: block;padding:0px">
 	<div class="um-field-area">
@@ -24,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</a>
 
 					<?php $content = apply_filters( 'um_terms_conditions_tc_page_content', $um_content_query->post_content, $args );
-					echo apply_filters( 'the_content', $content, $um_content_query->ID );
+					echo wp_kses( apply_filters( 'the_content', $content, $um_content_query->ID ), $allowed_html );
 				}
 			}  ?>
 		</div>

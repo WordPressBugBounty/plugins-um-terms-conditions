@@ -136,12 +136,12 @@ class UM_Terms_Conditions {
 		if ( UM()->is_request( 'admin' ) ) {
 			$this->admin_handlers();
 			$this->dashboard();
-			$this->email();
 			$this->settings();
 		} else {
 			$this->account();
 		}
 
+		$this->email();
 		$this->public_handlers();
 	}
 }

@@ -86,7 +86,7 @@ class Email {
 	 *
 	 * @param string|array $emails Email address or an array of email addresses.
 	 */
-	public function send_agreement_email( $emails ) {
+	public static function send_agreement_email( $emails ) {
 		if ( is_string( $emails ) ) {
 			$emails = array( $emails );
 		}

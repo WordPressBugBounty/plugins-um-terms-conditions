@@ -129,7 +129,7 @@ class Dashboard {
 				$tcae['state'] = 'error';
 			} else {
 
-				UM()->Terms_Conditions()->email()->send_agreement_email( $email_address );
+				UM()->Terms_Conditions()->email()::send_agreement_email( $email_address );
 
 				$tcae['sent'] += count( $email_address );
 				$tcae['done']  = ceil( 100 * $tcae['sent'] / $tcae['total'] ) . '%';

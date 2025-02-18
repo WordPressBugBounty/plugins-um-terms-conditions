@@ -1,15 +1,15 @@
-# Copyright (C) 2024 Ultimate Member
+# Copyright (C) 2025 Ultimate Member
 # This file is distributed under the same license as the Ultimate Member - Terms & Conditions plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Ultimate Member - Terms & Conditions 2.1.9\n"
+"Project-Id-Version: Ultimate Member - Terms & Conditions 2.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/terms-and-conditions\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-11-15T02:11:36+00:00\n"
+"POT-Creation-Date: 2025-02-18T15:26:09+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: um-terms-conditions\n"
@@ -135,8 +135,8 @@ msgstr ""
 #: includes/admin/templates/form/register_terms-conditions.php:44
 #: includes/admin/templates/form/register_terms-conditions.php:45
 #: includes/core/class-account.php:80
-#: templates/um-terms-conditions-public-display.php:32
-#: templates/um-terms-conditions-public-display.php:34
+#: templates/um-terms-conditions-public-display.php:37
+#: templates/um-terms-conditions-public-display.php:39
 msgid "Show Terms"
 msgstr ""
 
@@ -149,8 +149,8 @@ msgstr ""
 #: includes/admin/templates/form/register_terms-conditions.php:52
 #: includes/admin/templates/form/register_terms-conditions.php:53
 #: includes/core/class-account.php:79
-#: templates/um-terms-conditions-public-display.php:23
-#: templates/um-terms-conditions-public-display.php:33
+#: templates/um-terms-conditions-public-display.php:28
+#: templates/um-terms-conditions-public-display.php:38
 msgid "Hide Terms"
 msgstr ""
 
@@ -173,7 +173,7 @@ msgstr ""
 #: includes/admin/templates/form/register_terms-conditions.php:68
 #: includes/admin/templates/form/register_terms-conditions.php:69
 #: includes/core/class-account.php:150
-#: templates/um-terms-conditions-public-display.php:54
+#: templates/um-terms-conditions-public-display.php:59
 msgid "You must agree to our terms & conditions"
 msgstr ""
 
@@ -235,7 +235,7 @@ msgid "Yes"
 msgstr ""
 
 #: includes/admin/templates/form/register_terms-conditions.php:60
-#: templates/um-terms-conditions-public-display.php:45
+#: templates/um-terms-conditions-public-display.php:50
 msgid "Please confirm that you agree to our terms & conditions"
 msgstr ""
 
